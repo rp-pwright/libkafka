@@ -9,7 +9,7 @@ EXTRA_DIST = \
   LICENSE
 
 # We define the global AM_CPPFLAGS as everything we compile includes from these
-# directories. Adding /opt/local/include for Macs using MacPorts.
+# directories.
 AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/metadata -I$(top_srcdir)/produce -I$(top_srcdir)/fetch -I$(top_srcdir)/offset -I/opt/local/include -I/usr/local/include
 
 # Build rules for libraries.
