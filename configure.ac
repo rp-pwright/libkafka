@@ -21,8 +21,10 @@ AC_CONFIG_FILES([Makefile])
 AM_INIT_AUTOMAKE([1.9 dist-bzip2 dist-zip foreign subdir-objects])
 
 # Check for programs used in building libkafka
-AC_PROG_CC([gcc-mp-4.8 gcc])
-AC_PROG_CXX([g++-mp-4.8 g++])
+#AC_PROG_CC([gcc-mp-4.8 gcc])
+AC_PROG_CC([gcc-mp-4.8 cc])
+#AC_PROG_CXX([g++-mp-4.8 g++])
+AC_PROG_CXX([g++-mp-4.8 c++])
 AC_CHECK_PROGS(GCOV, [gcov-mp-4.8 gcov], gcov)
 AC_LANG([C++])
 AC_PROG_LIBTOOL
